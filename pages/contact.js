@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styled from 'styled-components'
 import Navigation from '../comps/navigation'
 import styles from '../styles/Home.module.css'
@@ -11,18 +10,16 @@ const Cont =styled.div`
   align-items:center;
 `
 
-const HeroImg = styled.img`
-  
-`
 
-export default function Home() {
+
+export default function Contact() {
   return (
     <Cont>
-      <Navigation pageName={"Welcome"} />
-
-      <HeroImg src=''></HeroImg>
-      
-      <p>Hello,my name is John. This is my portfolio to graduate from BCIT & apply for web/mobile developer.</p>
+      <Navigation pageName={"Contact"} />
+        
+      <input type={'text'} placeholder='Name'></input>
+      <input type={'email'} placeholder='Email'></input>
+      <input  type={'textbox'} placeholder='Message'></input>
     </Cont>
   )
 }
