@@ -17,9 +17,9 @@ export default function Contact() {
     <Cont>
       <Navigation pageName={"Contact"} />
         
-      <input type={'text'} placeholder='Name'></input>
-      <input type={'email'} placeholder='Email'></input>
-      <input  type={'textbox'} placeholder='Message'></input>
+      <input type={'text'} placeholder='Name'/>
+      <input type={'email'} placeholder='Email' />
+      <input  type={'textbox'} placeholder='Message' />
     </Cont>
   )
 }

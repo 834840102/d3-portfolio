@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { useRouter } from "next/router"
 
 const Cont = styled.div`
     display: flex;
@@ -28,15 +29,21 @@ const IntroText = styled.div`
 
 const Navigation = ({
     pageName,
+    index = "/",
+    about = "/about",
+    portfolio = "/portfolio",
+    contact = "/contact"
 }) =>{
+
+    const r = useRouter()
     return (
         <Cont>
             <div></div>
             <NavCont>
-                <NavName>Home</NavName>
-                <NavName>About</NavName>
-                <NavName>Project</NavName>
-                <NavName>Contact</NavName>
+                <NavName onClick={()=>r.push(index)}>Home</NavName>
+                <NavName onClick={()=>r.push(about)}>About</NavName>
+                <NavName onClick={()=>r.push(portfolio)}>Project</NavName>
+                <NavName onClick={()=>r.push(contact)}>Contact</NavName>
             </NavCont>
             <IntroText>{pageName}</IntroText>
         </Cont>
