@@ -16,19 +16,25 @@ const NavCont = styled.div`
     justify-content: flex-end;
 `
 
-const NavName = styled.button`
-    border: none;
+const NavNames = styled.li`
+    padding: 30px;
     background-color: #66BAE9;
     color: #fff;
+    font-size: 20px;
+    list-style: none;
+
 `
 
 const IntroText = styled.div`
     display: flex;
     color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    padding-left:50px;
 `;
 
 const Navigation = ({
-    pageName,
+    pageName="",
     index = "/",
     about = "/about",
     portfolio = "/portfolio",
@@ -40,10 +46,10 @@ const Navigation = ({
         <Cont>
             <div></div>
             <NavCont>
-                <NavName onClick={()=>r.push(index)}>Home</NavName>
-                <NavName onClick={()=>r.push(about)}>About</NavName>
-                <NavName onClick={()=>r.push(portfolio)}>Project</NavName>
-                <NavName onClick={()=>r.push(contact)}>Contact</NavName>
+                <NavNames onClick={()=>r.push(index)}>Home</NavNames>
+                <NavNames onClick={()=>r.push(about)}>About</NavNames>
+                <NavNames onClick={()=>r.push(portfolio)}>Project</NavNames>
+                <NavNames onClick={()=>r.push(contact)}>Contact</NavNames>
             </NavCont>
             <IntroText>{pageName}</IntroText>
         </Cont>

@@ -8,26 +8,69 @@ const Cont =styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items:center;
 `
 
+const Intro = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  margin: 2% 0;
+`
 
+const MyImg = styled.img`
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+`
+
+const IntroCont = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
+
+const IntroText = styled.span`
+  font-size:22px;
+  font-weight:600;
+`
+
+const HeaderTxt = styled.div`
+  margin-left: 3vw;
+  font-size:32px;
+  font-weight: 700;
+`
+
+const Line = styled.div`
+  width:90%;
+  height:1px;
+  background-color: black;
+  margin-left: 2%;
+  margin-top:2%;
+  margin-bottom:2%;
+`
+
+const Text = styled.div`
+  width: 60vw;
+  margin-left: 5vw;
+  font-size:26px;
+  font-weight: 400;
+`
 
 export default function About() {
   return (
     <Cont>
       <Navigation pageName={"About"} />
-      <div>
-          <img />
-          <div>
-              <span>John Zhou</span>
-              <span>Graduated from BCIT</span>
-              <span>Digital Design and Development program</span>
-          </div>
-      </div>
-      <header>Profile</header>
-      <div></div>
-      <p>Use various design theories and creative toolsets to create customer-focused visual design and websites. Skilled in designing, developing and testing multiple web-based applications incorporating a range of technologies. Goal-oriented Web Designer with a strong commitment to collaboration and solutions-oriented problem-solving.</p>
+      <Intro>
+          <MyImg src='Myself.jpg' />
+          <IntroCont>
+              <IntroText>John Zhou</IntroText>
+              <IntroText>Graduated from BCIT</IntroText>
+              <IntroText>Digital Design and Development program</IntroText>
+          </IntroCont>
+      </Intro>
+      <HeaderTxt>Profile</HeaderTxt>
+      <Line></Line>
+      <Text>Use various design theories and creative toolsets to create customer-focused visual design and websites. Skilled in designing, developing and testing multiple web-based applications incorporating a range of technologies. Goal-oriented Web Designer with a strong commitment to collaboration and solutions-oriented problem-solving.</Text>
     </Cont>
   )
 }

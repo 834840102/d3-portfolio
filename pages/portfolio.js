@@ -5,32 +5,53 @@ import Navigation from '../comps/navigation'
 import styles from '../styles/Home.module.css'
 
 const Cont =styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items:center;
+
+`
+const Categories = styled.div`
+display: flex;
+justify-content: space-around;
+align-items:center;
+margin-top:2%;
 `
 
+const Item = styled.div`
 
+`
+
+const Description = styled.div`
+font-size:26px;
+font-weight: 400;
+`
+
+const ItemImg = styled.img`
+  width:300px;
+  height:400px;
+  margin-top:2%;
+`
+
+const ItemImgDiff = styled.img`
+width:300px;
+height:300px;
+`
 
 export default function Project() {
   return (
     <Cont>
       <Navigation pageName={"Project"} />
-        <div>
-            <div>
-                <span>Frefurnish / Mobile App</span>
-                <img />
-            </div>
-            <div>
-                <span>Nutritional Spaces / Website</span>
-                <img />
-            </div>
-            <div>
-                <span>West Point Hotel / WordPress</span>
-                <img />
-            </div>
-        </div>
+        <Categories>
+            <Item>
+                <Description>Frefurnish / Mobile App</Description>
+                <ItemImgDiff src='/Frefurnish_round.png'/>
+            </Item> 
+            <Item>
+                <Description>Nutritional Spaces / Website</Description>
+                <ItemImg src='/Logo3.png'/>
+            </Item>
+            <Item>
+                <Description>West Point Hotel / WordPress</Description>
+                <ItemImg src='Frame.png'/>
+            </Item>
+        </Categories>
       
     </Cont>
   )
