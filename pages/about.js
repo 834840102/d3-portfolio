@@ -12,7 +12,6 @@ const Cont =styled.div`
 
 const Intro = styled.div`
   display: flex;
-  justify-content: space-around;
   align-items:center;
   margin: 2% 0;
 `
@@ -21,12 +20,15 @@ const MyImg = styled.img`
   width:200px;
   height:200px;
   border-radius: 50%;
+  object-fit:cover;
+  margin-left:10%;
 `
 
 const IntroCont = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: 2%;
 `
 
 const IntroText = styled.span`

@@ -12,8 +12,8 @@ const Cont =styled.div`
 `
 
 const HeroImg = styled.img`
-  width:100%;
-  height: 500px;
+  width:50%;
+  height: 48%;
 `
 
 const Text = styled.div`
@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <Cont>
       <Navigation pageName={"Welcome"} />
-        <HeroImg src='/workplace.jpg' />
+      <HeroImg src='/workplace.jpg' />
       <Text>Hello,my name is John. This is my portfolio to graduate from BCIT & apply for web/mobile developer.</Text>
     </Cont>
   )

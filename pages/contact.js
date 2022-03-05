@@ -29,12 +29,14 @@ const InputBox = styled.input`
 `
 
 const IconCont = styled.div`
+width:100%;
 display: flex;
 padding: 30px 0;
+background-color: #60BAE0;
 `
 
 const Icons = styled.img`
-  width:${props=>props.w};
+  width:${props => props.w};
   height:50px;
   padding: 0 20px;
 `
@@ -61,10 +63,10 @@ export default function Contact() {
         <InputBox type={'textbox'} placeholder='Message' />
       </InputCont>
       <IconCont>
-      <Icons src='/Facebook_icon.png' w={50}/>
-      <Icons src='/LinkedIn_icon_circle.svg.png' w={50}/>
-      <Icons src='/Twitter-logo.png' w={56}/>
-      <SignText>© 2022 John Zhou</SignText>
+        <Icons src='/Facebook_icon.png' w={50} />
+        <Icons src='/LinkedIn_icon_circle.svg.png' w={50} />
+        <Icons src='/Twitter-logo.png' w={56} />
+        <SignText>© 2022 John Zhou</SignText>
       </IconCont>
     </Cont>
   )
