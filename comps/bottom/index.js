@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import styled from "styled-components";
 
 const Cont = styled.div`
@@ -19,7 +20,7 @@ const IconCont = styled.div`
   justify-content: space-between;
   align-items:center;
   padding: 30px 0;
-  background-color: #60BAE0;
+  background-color: ${props=>props.color};
 `
 
 const Icons = styled.img`
@@ -69,9 +70,12 @@ const Policy = styled.div`
 	}
 `
 
-export default function BottomBar () {
+export default function BottomBar ({
+    color= '#60BAE0',
+}) {
+    const r = useRouter()
     return <Cont>
-    <IconCont>
+    <IconCont color={color}>
         <div>
         <Icons src='/Facebook_icon.png' w={50} />
         <Icons src='/LinkedIn_icon_circle.svg.png' w={50} />
@@ -81,7 +85,7 @@ export default function BottomBar () {
         <PolicyCont>
           <Term onClick={()=>r.push("/term")}>Terms of Use</Term>
           <Break></Break>
-          <Policy>Privacy Policy</Policy>
+          <Policy onClick={()=>r.push("/policy")}>Privacy Policy</Policy>
         </PolicyCont>
       </IconCont>
       </Cont>

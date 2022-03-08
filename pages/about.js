@@ -61,6 +61,7 @@ const Line = styled.div`
 const Text = styled.div`
   width: 80%;
   margin-left: 5vw;
+  margin-bottom: 5vh;
   font-size:26px;
   font-weight: 400;
 `
@@ -73,6 +74,7 @@ export default function About() {
           <MyImg src='Myself.jpg' />
           <IntroCont>
               <IntroText>John Zhou</IntroText>
+              <IntroText>Front End Developer</IntroText>
               <IntroText>Graduated from BCIT</IntroText>
               <IntroText>Digital Design and Development program</IntroText>
           </IntroCont>

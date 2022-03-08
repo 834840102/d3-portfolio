@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import BottomBar from '../comps/bottom'
 import Navigation from '../comps/navigation'
 
 const Cont = styled.div`
@@ -24,5 +25,6 @@ export default function TermOfUse () {
         <Text>Last Update:</Text>
         <Text>Mar 07, 2021</Text>
         <Text>John Zhou, Front-End Developer, BCIT</Text>
+        <BottomBar />
     </Cont>
 }

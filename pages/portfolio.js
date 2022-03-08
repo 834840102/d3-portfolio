@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styled from 'styled-components'
 import BottomBar from '../comps/bottom'
 import Navigation from '../comps/navigation'
+
 const Cont =styled.div`
 -webkit-touch-callout: none; /* iOS Safari */
 -webkit-user-select: none; /* Safari */
@@ -15,7 +16,7 @@ const Categories = styled.div`
 display: flex;
 justify-content: space-around;
 align-items:center;
-margin-top:2%;
+margin: 2% 0;
 `
 
 const Item = styled.div`

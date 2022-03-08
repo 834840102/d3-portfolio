@@ -4,17 +4,11 @@ import BottomBar from '../comps/bottom'
 import Navigation from '../comps/navigation'
 import styles from '../styles/Home.module.css'
 
+
 const Cont =styled.div`
-  width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items:center;
-  background-image: url('/ME.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
@@ -23,45 +17,54 @@ const Cont =styled.div`
   user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 `
 
-const Down = styled.div`
-  width:100vw;
-  height: 100px;
-  background-color: #fff;
-  opacity: 0.8;
+const Intro = styled.div`
+  width:100%;
+  min-height:50vh;
+  display:flex;
+  justify-content: center;
+
+`
+const LeftCont = styled.div`
+  display:flex;
+  align-items: center;
+  margin-bottom: 10vh;
+  margin-right: 2vw;
 `
 
-const Content = styled.div`
+const RigitCont = styled.div`
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+`
+
+const Header = styled.h1`
+
+`
+
+const SubHead = styled.h3`
 
 `
 
 const Text = styled.div`
-  width:100%;
-  min-height:10vh;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  background-color: #66BAE9;
   font-size: 22px;
   font-weight: 400;
 `
 
 export default function Home() {
 
-  const [open, setOpen] = useState(false)
   return (
     <Cont>
-      <Navigation pageName={"Welcome"} />
-      <Down onClick={()=>setOpen(!open)}></Down>
-      {open ? (
-        <Content>
-          <Text>Hello,my name is John. This is my portfolio to graduate from BCIT & apply for web/mobile developer.</Text>
-          <BottomBar /> 
-        </Content>
-      ) : (
-      <></>
-      )
-    }
-      
+      <Navigation pageName={"Welcome to John Zhou portfolio"} />
+      <Intro>
+        <LeftCont>
+          <Header>Hello,</Header>
+        </LeftCont>
+        <RigitCont>
+          <SubHead>My name is Fangyuan Zhou. ( John Zhou )</SubHead>
+          <Text>I am a web/mobile developer.</Text>
+        </RigitCont>
+      </Intro>
+      <BottomBar />  
     </Cont>
   )
 }
