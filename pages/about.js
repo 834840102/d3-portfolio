@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styled from 'styled-components'
+import BottomBar from '../comps/bottom'
 import Navigation from '../comps/navigation'
 import styles from '../styles/Home.module.css'
 
@@ -8,6 +9,12 @@ const Cont =styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 `
 
 const Intro = styled.div`
@@ -52,7 +59,7 @@ const Line = styled.div`
 `
 
 const Text = styled.div`
-  width: 60vw;
+  width: 80%;
   margin-left: 5vw;
   font-size:26px;
   font-weight: 400;
@@ -73,6 +80,7 @@ export default function About() {
       <HeaderTxt>Profile</HeaderTxt>
       <Line></Line>
       <Text>Use various design theories and creative toolsets to create customer-focused visual design and websites. Skilled in designing, developing and testing multiple web-based applications incorporating a range of technologies. Goal-oriented Web Designer with a strong commitment to collaboration and solutions-oriented problem-solving.</Text>
+      <BottomBar />
     </Cont>
   )
 }

@@ -1,5 +1,6 @@
-import Head from 'next/head'
+import { useRouter } from 'next/router'
 import styled from 'styled-components'
+import BottomBar from '../comps/bottom'
 import Navigation from '../comps/navigation'
 import styles from '../styles/Home.module.css'
 
@@ -8,10 +9,16 @@ const Cont = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items:center;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 `
 
 const InputCont = styled.div`
-
+  
 `
 
 const Des = styled.p`
@@ -26,27 +33,12 @@ const Input = styled.input`
 const InputBox = styled.input`
   width: 700px;
   height: 220px;
-`
-
-const IconCont = styled.div`
-width:100%;
-display: flex;
-padding: 30px 0;
-background-color: #60BAE0;
-`
-
-const Icons = styled.img`
-  width:${props => props.w};
-  height:50px;
-  padding: 0 20px;
-`
-
-const SignText = styled.div`
-  font-size:30px;
-  font-weight400;
+  margin-bottom: 2%;
 `
 
 export default function Contact() {
+
+  const r = useRouter()
   return (
     <Cont>
       <Navigation pageName={"Contact"} />
@@ -62,12 +54,7 @@ export default function Contact() {
         <Des>Message:</Des>
         <InputBox type={'textbox'} placeholder='Message' />
       </InputCont>
-      <IconCont>
-        <Icons src='/Facebook_icon.png' w={50} />
-        <Icons src='/LinkedIn_icon_circle.svg.png' w={50} />
-        <Icons src='/Twitter-logo.png' w={56} />
-        <SignText>© 2022 John Zhou</SignText>
-      </IconCont>
+      <BottomBar />
     </Cont>
   )
 }
