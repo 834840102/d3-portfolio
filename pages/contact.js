@@ -50,11 +50,7 @@ export default function Contact() {
         <Des>Email:</Des>
         <Input type={'email'} placeholder='Email' />
       </InputCont>
-      <InputCont>
-        <Des>Message:</Des>
-        <InputBox type={'textbox'} placeholder='Message' />
-      </InputCont>
-      <BottomBar />
     </Cont>
   )
 }
+//can delete after the email button

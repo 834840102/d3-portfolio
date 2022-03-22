@@ -90,3 +90,4 @@ export default function BottomBar ({
       </IconCont>
       </Cont>
 }
+//add a email button 

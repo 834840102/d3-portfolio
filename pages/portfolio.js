@@ -49,23 +49,23 @@ export default function Project() {
 
   return (
     <Cont>
-      <Navigation pageName={"Project"} />
+      <Navigation pageName={"Projects"} />
         <Categories>
             <Item>
-                <Description target='_blank' href='https://github.com/saihajvir/Frefurnish'>Frefurnish / Mobile App</Description>
-                <a target='_blank' href='https://github.com/saihajvir/Frefurnish'>
+                <Description target='_blank' href='https://github.com/saihajvir/Frefurnish' rel="noreferrer">Frefurnish / Mobile App</Description>
+                <a target='_blank' href='https://github.com/saihajvir/Frefurnish' rel="noreferrer">
                 <ItemImgDiff src='/Frefurnish_round.png'  />
                 </a>
             </Item> 
             <Item>
-                <Description target='_blank' href='https://github.com/834840102/dynamic-finalproject-group5'>Nutritional Spaces / Website</Description>
-                <a target='_blank' href='https://github.com/834840102/dynamic-finalproject-group5'>
+                <Description target='_blank' href='https://github.com/834840102/dynamic-finalproject-group5' rel="noreferrer">Nutritional Spaces / Website</Description>
+                <a target='_blank' href='https://github.com/834840102/dynamic-finalproject-group5' rel="noreferrer">
                 <ItemImg src='/Logo3.png'/>
                 </a>
             </Item>
             <Item>
-                <Description target='_blank' href='https://www.figma.com/proto/5y2Cpr6Jy9pWpWPIoBDYYf/West-Point-Hotel-Prototype-Website?node-id=211%3A2&scaling=min-zoom&page-id=211%3A1&starting-point-node-id=211%3A2'>West Point Hotel / WordPress</Description>
-                <a target='_blank' href='https://www.figma.com/proto/5y2Cpr6Jy9pWpWPIoBDYYf/West-Point-Hotel-Prototype-Website?node-id=211%3A2&scaling=min-zoom&page-id=211%3A1&starting-point-node-id=211%3A2'>
+                <Description target='_blank' rel="noreferrer" href='https://www.figma.com/proto/5y2Cpr6Jy9pWpWPIoBDYYf/West-Point-Hotel-Prototype-Website?node-id=211%3A2&scaling=min-zoom&page-id=211%3A1&starting-point-node-id=211%3A2'>West Point Hotel / WordPress</Description>
+                <a target='_blank' rel="noreferrer" href='https://www.figma.com/proto/5y2Cpr6Jy9pWpWPIoBDYYf/West-Point-Hotel-Prototype-Website?node-id=211%3A2&scaling=min-zoom&page-id=211%3A1&starting-point-node-id=211%3A2'>
                 <ItemImg src='Frame.png'/>
                 </a>
             </Item>
@@ -74,3 +74,7 @@ export default function Project() {
     </Cont>
   )
 }
+
+//Above the card have blur
+//
+//Live view hint

@@ -86,3 +86,5 @@ export default function About() {
     </Cont>
   )
 }
+
+//avatar part and profile part align center
