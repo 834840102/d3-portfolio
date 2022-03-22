@@ -43,8 +43,6 @@ const Navigation = ({
     pageName="",
     index = "/",
     about = "/about",
-    portfolio = "/portfolio",
-    contact = "/contact"
 }) =>{
 
     const r = useRouter()
@@ -54,8 +52,6 @@ const Navigation = ({
             <NavCont>
                 <NavNames onClick={()=>r.push(index)}>Home</NavNames>
                 <NavNames onClick={()=>r.push(about)}>About</NavNames>
-                <NavNames onClick={()=>r.push(portfolio)}>Projects</NavNames>
-                <NavNames onClick={()=>r.push(contact)}>Contact</NavNames>
             </NavCont>
             <IntroText>{pageName}</IntroText>
         </Cont>

@@ -5,7 +5,7 @@ import BottomBar from '../comps/bottom'
 import Navigation from '../comps/navigation'
 import styles from '../styles/Home.module.css'
 
-const Cont =styled.div`
+const Cont = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,34 +34,36 @@ const MyImg = styled.img`
 const IntroCont = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin-left: 2%;
 `
 
 const IntroText = styled.span`
   font-size:22px;
   font-weight:600;
+  margin: 10px 0;
+`
+
+const DesCont =styled.div`
+  width: 50%;
+  margin-left: 5vw;
+  margin-bottom: 5vh;
 `
 
 const HeaderTxt = styled.div`
-  margin-left: 3vw;
   font-size:32px;
   font-weight: 700;
 `
 
 const Line = styled.div`
-  width:90%;
+  width:50%;
   height:1px;
   background-color: black;
-  margin-left: 2%;
   margin-top:2%;
   margin-bottom:2%;
 `
 
 const Text = styled.div`
   width: 80%;
-  margin-left: 5vw;
-  margin-bottom: 5vh;
   font-size:26px;
   font-weight: 400;
 `
@@ -71,20 +73,20 @@ export default function About() {
     <Cont>
       <Navigation pageName={"About"} />
       <Intro>
-          <MyImg src='Myself.jpg' />
-          <IntroCont>
-              <IntroText>John Zhou</IntroText>
-              <IntroText>Front End Developer</IntroText>
-              <IntroText>Graduated from BCIT</IntroText>
-              <IntroText>Digital Design and Development program</IntroText>
-          </IntroCont>
+        <MyImg src='Myself.jpg' />
+        <IntroCont>
+          <IntroText>Fangyuan Zhou(John)</IntroText>
+          <IntroText>Front End Developer</IntroText>
+          <IntroText>Graduated from BCIT</IntroText>
+          <IntroText>Digital Design and Development program</IntroText>
+        </IntroCont>
+        <DesCont>
+          <HeaderTxt>Profile</HeaderTxt>
+          <Line></Line>
+          <Text>Use various design theories and creative toolsets to create customer-focused visual design and websites. Skilled in designing, developing and testing multiple web-based applications incorporating a range of technologies. Goal-oriented Web Designer with a strong commitment to collaboration and solutions-oriented problem-solving.</Text>
+        </DesCont>
       </Intro>
-      <HeaderTxt>Profile</HeaderTxt>
-      <Line></Line>
-      <Text>Use various design theories and creative toolsets to create customer-focused visual design and websites. Skilled in designing, developing and testing multiple web-based applications incorporating a range of technologies. Goal-oriented Web Designer with a strong commitment to collaboration and solutions-oriented problem-solving.</Text>
       <BottomBar />
     </Cont>
   )
 }
-
-//avatar part and profile part align center
